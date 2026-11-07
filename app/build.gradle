@@ -1,0 +1,95 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.compose)
+}
+
+android {
+    namespace 'com.example.llamananodemo'
+    compileSdk 37
+
+    defaultConfig {
+        applicationId "com.example.llamananodemo"
+        minSdk 34
+        targetSdk 37
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            //noinspection ChromeOsAbiSupport
+            abiFilters = ["arm64-v8a"]
+            // 模拟器调试打开下面一行
+            // abiFilters = ["arm64-v8a", "x86_64"]
+        }
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+                arguments += [
+//                        "-DLLAMA_VULKAN=ON",
+                        // 强制 Release 级优化：debug 变体默认 CMAKE_BUILD_TYPE=Debug（-O0），
+                        // ggml 的矩阵运算无优化编译比 -O3 慢 5~10 倍
+                        "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                        "-DLLAMA_BUILD_TESTS=OFF",
+                        "-DLLAMA_BUILD_EXAMPLES=OFF",
+                        "-DLLAMA_BUILD_SERVER=OFF"
+                ]
+            }
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            // 调试的时候打开，正式打包注释掉！关闭优化、包巨大
+            // optimization {
+            //     enable false
+            // }
+            minifyEnabled = false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    externalNativeBuild {
+        cmake {
+            path("src/main/cpp/CMakeLists.txt")
+            version "4.1.2"
+        }
+    }
+
+    ndkVersion "28.2.13676358"
+}
+
+dependencies {
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.androidx.activity.compose
+    implementation libs.androidx.compose.material3
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.ui.graphics
+    implementation libs.androidx.compose.ui.tooling.preview
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.8.4"
+// ✅ 新增这一行，Compose viewModel 函数
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.4"
+    testImplementation libs.junit
+    androidTestImplementation platform(libs.androidx.compose.bom)
+    androidTestImplementation libs.androidx.compose.ui.test.junit4
+    androidTestImplementation libs.androidx.espresso.core
+    androidTestImplementation libs.androidx.junit
+    debugImplementation libs.androidx.compose.ui.test.manifest
+    debugImplementation libs.androidx.compose.ui.tooling
+
+}

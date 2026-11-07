@@ -1,0 +1,18 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/ggml/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/ggml/src/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/ggml/src/ggml-cpu/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/src/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/vendor/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/vendor/hash/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/vendor/miniaudio/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/vendor/nlohmann/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/vendor/sheredom/cmake_install.cmake",
+		"D:/llamananodemo/app/.cxx/RelWithDebInfo/i4y1h641/arm64-v8a/llama.cpp/vendor/stb/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

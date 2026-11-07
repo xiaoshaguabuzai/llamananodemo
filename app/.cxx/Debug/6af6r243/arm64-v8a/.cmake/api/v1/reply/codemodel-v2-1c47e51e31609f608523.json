@@ -1,0 +1,304 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "llama.cpp",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-llama.cpp-Debug-69d13f82e3da047b0edd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "llama.cpp"
+				},
+				{
+					"build" : "llama.cpp/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-llama.cpp.ggml-Debug-fe4f2bf9b77031219175.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "llama.cpp/ggml"
+				},
+				{
+					"build" : "llama.cpp/ggml/src",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-llama.cpp.ggml.src-Debug-f6490a3e7ec036a9ecf9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "llama.cpp/ggml/src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "llama.cpp/ggml/src/ggml-cpu",
+					"jsonFile" : "directory-llama.cpp.ggml.src.ggml-cpu-Debug-9faef5729f83cbd49b62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "llama.cpp/ggml/src/ggml-cpu"
+				},
+				{
+					"build" : "llama.cpp/src",
+					"jsonFile" : "directory-llama.cpp.src-Debug-bd7f9ecb4badb4eb87a3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "llama.cpp/src",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "llama.cpp/vendor",
+					"childIndexes" : 
+					[
+						7,
+						8,
+						9,
+						10,
+						11
+					],
+					"jsonFile" : "directory-llama.cpp.vendor-Debug-ea9c8bc6d556cad063b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "llama.cpp/vendor"
+				},
+				{
+					"build" : "llama.cpp/vendor/hash",
+					"jsonFile" : "directory-llama.cpp.vendor.hash-Debug-eaabdc3bb64f4b2c0c49.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "llama.cpp/vendor/hash",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "llama.cpp/vendor/miniaudio",
+					"jsonFile" : "directory-llama.cpp.vendor.miniaudio-Debug-b75efdc96de30ed9f3c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "llama.cpp/vendor/miniaudio"
+				},
+				{
+					"build" : "llama.cpp/vendor/nlohmann",
+					"jsonFile" : "directory-llama.cpp.vendor.nlohmann-Debug-22343e064f1fc53002c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "llama.cpp/vendor/nlohmann"
+				},
+				{
+					"build" : "llama.cpp/vendor/sheredom",
+					"jsonFile" : "directory-llama.cpp.vendor.sheredom-Debug-a25fb9a260d2a28f73f2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "llama.cpp/vendor/sheredom"
+				},
+				{
+					"build" : "llama.cpp/vendor/stb",
+					"jsonFile" : "directory-llama.cpp.vendor.stb-Debug-4298fe2d0abde082d2ec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "llama.cpp/vendor/stb"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "llama_wrapper",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					],
+					"name" : "llama.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@94de48a0d5830e0c5d2f",
+					"jsonFile" : "target-ggml-Debug-28edc2585214180c1559.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-base::@94de48a0d5830e0c5d2f",
+					"jsonFile" : "target-ggml-base-Debug-a9db7244b0edfd0c39d4.json",
+					"name" : "ggml-base",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-cpu::@94de48a0d5830e0c5d2f",
+					"jsonFile" : "target-ggml-cpu-Debug-ca12b2db96845a97268d.json",
+					"name" : "ggml-cpu",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "llama::@fb8c1886b26de7beabc1",
+					"jsonFile" : "target-llama-Debug-f7f5d41324f1976dc166.json",
+					"name" : "llama",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "llama_wrapper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-llama_wrapper-Debug-92c08042e36274744710.json",
+					"name" : "llama_wrapper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "vendor-hash::@33048eebb93bf90e24ac",
+					"jsonFile" : "target-vendor-hash-Debug-e187b4c30d7ce3b95056.json",
+					"name" : "vendor-hash",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/llamananodemo/app/.cxx/Debug/6af6r243/arm64-v8a",
+		"source" : "D:/llamananodemo/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

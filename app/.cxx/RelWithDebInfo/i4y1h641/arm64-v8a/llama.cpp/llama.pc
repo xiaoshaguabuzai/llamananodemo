@@ -1,0 +1,10 @@
+prefix=C:/Program Files (x86)/llama_wrapper
+exec_prefix=C:/Program Files (x86)/llama_wrapper
+libdir=C:/Program Files (x86)/llama_wrapper/lib
+includedir=C:/Program Files (x86)/llama_wrapper/include
+
+Name: llama
+Description: Port of Facebook's LLaMA model in C/C++
+Version: 0.9.0-dev
+Libs: -L${libdir} -lggml -lggml-base -lllama
+Cflags: -I${includedir}
